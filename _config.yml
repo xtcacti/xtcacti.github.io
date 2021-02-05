@@ -105,3 +105,6 @@ colorscheme: dark
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: "git"
+  repo: https://github.com/xtcacti/xtcacti.github.io
+  branch: [branch]
+  message: [message]
