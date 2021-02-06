@@ -15,3 +15,15 @@ tags: HTML
   - `<footer>`
   - `<details>`
   - `<summary>`
+- 表单
+ - `<datalist id="hello">`为`<input list="hello">`规定预定义选项
+ - `<keygen>`
+ - `<output>`
+
+- 多媒体
+  - `<embed>` 添加HTML插件的容器
+  - `<audio>` 音频
+  - `<video>` 视频
+
+
+> 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除
