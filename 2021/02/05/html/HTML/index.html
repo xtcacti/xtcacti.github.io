@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="HTML 是什么？ Hyper Text Markup Language 不是一种编程语言，是一种标记语言 HTML 是一套标记标签，通过标记标签来描述网页 HTML 文档&#x3D;网页 Web 浏览器的作用就是读取 HTML 文档，进而展示成网页   HTML 标签 HTML 标题 主-&gt;次 &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&amp;gt">
+    <meta name="description" content="HTML 是什么？ Hyper Text Markup Language 不是一种编程语言，是一种标记语言 HTML 是一套标记标签，通过标记标签来描述网页 HTML 文档&#x3D;网页 Web 浏览器的作用就是读取 HTML 文档，进而展示成网页   HTML 标签 HTML头部 &lt;head&gt; 页面标题，工具栏的标题，被收藏的标题，搜索引擎的标题 &lt;title&gt; 页面上所有链接的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML基础">
 <meta property="og:url" content="https://xtcacti.github.io/2021/02/05/html/HTML/index.html">
 <meta property="og:site_name" content="xtcacti">
-<meta property="og:description" content="HTML 是什么？ Hyper Text Markup Language 不是一种编程语言，是一种标记语言 HTML 是一套标记标签，通过标记标签来描述网页 HTML 文档&#x3D;网页 Web 浏览器的作用就是读取 HTML 文档，进而展示成网页   HTML 标签 HTML 标题 主-&gt;次 &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&amp;gt">
+<meta property="og:description" content="HTML 是什么？ Hyper Text Markup Language 不是一种编程语言，是一种标记语言 HTML 是一套标记标签，通过标记标签来描述网页 HTML 文档&#x3D;网页 Web 浏览器的作用就是读取 HTML 文档，进而展示成网页   HTML 标签 HTML头部 &lt;head&gt; 页面标题，工具栏的标题，被收藏的标题，搜索引擎的标题 &lt;title&gt; 页面上所有链接的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-05T14:51:21.000Z">
-<meta property="article:modified_time" content="2021-02-06T14:22:05.357Z">
+<meta property="article:modified_time" content="2021-02-06T16:19:32.909Z">
 <meta property="article:author" content="xtcacti">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary">
@@ -77,7 +77,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/2021/02/05/%E7%BC%96%E8%BE%91%E5%99%A8/VSCode/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/2021/02/05/others/VSCode/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
@@ -106,7 +106,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">HTML 是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%A0%87%E7%AD%BE"><span class="toc-number">2.</span> <span class="toc-text">HTML 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%97%E5%85%83%E7%B4%A0-vs-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.</span> <span class="toc-text">块元素 vs 行内元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">HTML 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">HTML 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%B3%A8%E9%87%8A"><span class="toc-number">5.</span> <span class="toc-text">HTML 注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">HTML 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%9B%BE%E5%83%8F"><span class="toc-number">7.</span> <span class="toc-text">HTML 图像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%93%8D%E5%BA%94%E5%BC%8FWeb%E8%AE%BE%E8%AE%A1"><span class="toc-number">8.</span> <span class="toc-text">HTML 响应式Web设计</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">HTML 是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%A0%87%E7%AD%BE"><span class="toc-number">2.</span> <span class="toc-text">HTML 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%97%E5%85%83%E7%B4%A0-vs-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.</span> <span class="toc-text">块元素 vs 行内元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">HTML 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">HTML 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%B3%A8%E9%87%8A"><span class="toc-number">5.</span> <span class="toc-text">HTML 注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">HTML 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%9B%BE%E5%83%8F"><span class="toc-number">7.</span> <span class="toc-text">HTML 图像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%93%8D%E5%BA%94%E5%BC%8FWeb%E8%AE%BE%E8%AE%A1"><span class="toc-number">8.</span> <span class="toc-text">HTML 响应式Web设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%AE%9E%E4%BD%93%E5%AD%97%E7%AC%A6"><span class="toc-number">9.</span> <span class="toc-text">HTML实体字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-URL"><span class="toc-number">10.</span> <span class="toc-text">HTML URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-lt-DOCTYPE-gt"><span class="toc-number">11.</span> <span class="toc-text">HTML &lt;!DOCTYPE&gt;</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -159,9 +159,18 @@
 </ul>
 <hr>
 <h2 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h2><ul>
+<li>HTML头部 <code>&lt;head&gt;</code><ul>
+<li>页面标题，工具栏的标题，被收藏的标题，搜索引擎的标题 <code>&lt;title&gt;</code></li>
+<li>页面上所有链接的默认地址或默认目标 <code>&lt;base&gt;</code></li>
+<li>定义文档与外部资源的关系 <code>&lt;link&gt;</code></li>
+<li>内部样式表方式 <code>&lt;style&gt;</code></li>
+<li>定义元数据，用于搜索引擎 <code>&lt;meta&gt;</code></li>
+<li>定义客户端脚本 <code>&lt;script&gt;</code></li>
+</ul>
+</li>
 <li>HTML 标题 主-&gt;次 <code>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</code><ul>
 <li>效果展示之用</li>
-<li>SEO 编排索引之用</li>
+<li>搜索引擎 编排索引之用</li>
 </ul>
 </li>
 <li>HTML 段落 <code>&lt;p&gt;</code></li>
@@ -187,7 +196,7 @@
 <li>引用和术语定义<ul>
 <li>长引用: 缩进处理 <code>&lt;blockquote&gt;</code></li>
 <li>短引用：引号处理 <code>&lt;q&gt;</code></li>
-<li>缩略词：搭配属性<code>title</code>使用,为 SEO 提供有用信息 <code>&lt;abbr&gt; &lt;dfn&gt;</code></li>
+<li>缩略词：搭配属性<code>title</code>使用,为搜索引擎提供有用信息 <code>&lt;abbr&gt; &lt;dfn&gt;</code></li>
 <li>联系信息：<code>&lt;address&gt;</code></li>
 <li>著作标题：<code>&lt;cite&gt;</code></li>
 <li>双向重写：<code>&lt;bdo&gt;</code></li>
@@ -231,6 +240,36 @@
 <li>不支持客户端脚本的替代内容<code>&lt;noscript&gt;</code></li>
 </ul>
 </li>
+<li>HTML表单：定义用户不同的类型输入 <ul>
+<li><code>&lt;form action=&quot;&quot; method=&quot;&quot;&gt;</code><ul>
+<li>action属性：表单处理程序的服务器页面，省略则设置为当前页面</li>
+<li>method属性：提交表单时所用的http方法 <code>get post ...</code></li>
+</ul>
+</li>
+<li>文本输入、单选/多选按钮输入、提交按钮：通过<code>&lt;input&gt;</code>的属性<code>type</code>决定<ul>
+<li><code>type=&quot;text&quot;</code></li>
+<li><code>type=&quot;password&quot;</code>：掩码处理</li>
+<li><code>type=&quot;radio&quot;</code>：单选</li>
+<li><code>type=&quot;checkbox&quot;</code>: 复选框</li>
+<li><code>type=&quot;sumbit&quot;</code></li>
+<li><code>type=&quot;...&quot;</code>:还有一大堆type值 参考<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/html/html_form_input_types.asp">w3school</a>去吧</li>
+<li><code>name=&quot;&quot;</code>:要被正确提交，就必须设置name属性</li>
+<li><code>value=&quot;&quot;</code>:规定输入字段的初始值</li>
+<li><code>...=&quot;&quot;</code>:还有一大堆属性 参考<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/html/html_form_attributes.asp">w3school</a>去吧</li>
+</ul>
+</li>
+<li>下拉列表 <code>&lt;select&gt;</code><ul>
+<li>下拉列表选项 <code>&lt;option&gt;</code></li>
+</ul>
+</li>
+<li>文本域，即可输入多行字段 <code>&lt;textarea&gt;</code></li>
+<li>按钮 <code>&lt;button&gt;</code></li>
+<li>组合相关表单 <code>&lt;fieldset&gt;</code></li>
+<li>为<code>&lt;fieldset&gt;</code>定义标题 <code>&lt;legend&gt;</code></li>
+</ul>
+</li>
+<li>支持HTML助手(插件) <code>&lt;object&gt;</code> 音频视频之类的</li>
+<li></li>
 <li>强制：所有元素标签使用小写</li>
 <li>强制：所有元素添加闭合标签</li>
 <li>废弃标签：<del><code>&lt;center&gt;</code></del> <del><code>&lt;font&gt;</code></del> <del><code>&lt;basefont&gt;</code></del> <del><code>&lt;s&gt;</code></del> <del><code>&lt;strike&gt;</code></del> <del><code>&lt;u&gt;</code></del> <del><code>&lt;menu&gt;</code></del></li>
@@ -284,6 +323,31 @@
 <li>Bootstrap是最流行的开发RWD的框架</li>
 <li>老式浏览器，可将脚本放在注释中</li>
 </ul>
+<h2 id="HTML实体字符"><a href="#HTML实体字符" class="headerlink" title="HTML实体字符"></a>HTML实体字符</h2><ul>
+<li>比如使用<code>&lt;</code> <code>&gt;</code>会被浏览器误认为是标签，所以就定制了实体字符 e.g.：空格：<code>&amp;nbsp</code></li>
+</ul>
+<h2 id="HTML-URL"><a href="#HTML-URL" class="headerlink" title="HTML URL"></a>HTML URL</h2><ul>
+<li>URL用来定位万维网上的文档或其他数据</li>
+<li>语法规则：<code>scheme://host.domain:port/path/filename</code><ul>
+<li>scheme:因特网服务类型：http https file</li>
+<li>host:域主机：默认www</li>
+<li>domain:因特网域名：w3school.com.cn</li>
+<li>:port:主机上的端口号: http默认80</li>
+<li>服务器上的路径,若省略则在服务器根路径上</li>
+<li>filename:顾名思义吧~~~</li>
+</ul>
+</li>
+<li>URL编码<ul>
+<li>URL只能用ASCII通过因特网进行发送</li>
+<li>非ASCII字符通过%加两位十六进制来转变</li>
+<li>空格用 + 来转</li>
+</ul>
+</li>
+</ul>
+<h2 id="HTML-lt-DOCTYPE-gt"><a href="#HTML-lt-DOCTYPE-gt" class="headerlink" title="HTML &lt;!DOCTYPE&gt;"></a>HTML &lt;!DOCTYPE&gt;</h2><ul>
+<li>不同的文档类型，不同的HTML版本信息都是通过&lt;!DOCTYPE&gt;传递的</li>
+<li>e.g. HTML5：<code>&lt;!DOCTYPE html&gt;</code></li>
+</ul>
 <blockquote>
 <p>声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除</p>
 </blockquote>
@@ -312,7 +376,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">HTML 是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%A0%87%E7%AD%BE"><span class="toc-number">2.</span> <span class="toc-text">HTML 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%97%E5%85%83%E7%B4%A0-vs-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.</span> <span class="toc-text">块元素 vs 行内元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">HTML 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">HTML 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%B3%A8%E9%87%8A"><span class="toc-number">5.</span> <span class="toc-text">HTML 注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">HTML 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%9B%BE%E5%83%8F"><span class="toc-number">7.</span> <span class="toc-text">HTML 图像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%93%8D%E5%BA%94%E5%BC%8FWeb%E8%AE%BE%E8%AE%A1"><span class="toc-number">8.</span> <span class="toc-text">HTML 响应式Web设计</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">HTML 是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%A0%87%E7%AD%BE"><span class="toc-number">2.</span> <span class="toc-text">HTML 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%97%E5%85%83%E7%B4%A0-vs-%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.</span> <span class="toc-text">块元素 vs 行内元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">HTML 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">HTML 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E6%B3%A8%E9%87%8A"><span class="toc-number">5.</span> <span class="toc-text">HTML 注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">HTML 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%9B%BE%E5%83%8F"><span class="toc-number">7.</span> <span class="toc-text">HTML 图像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E5%93%8D%E5%BA%94%E5%BC%8FWeb%E8%AE%BE%E8%AE%A1"><span class="toc-number">8.</span> <span class="toc-text">HTML 响应式Web设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%AE%9E%E4%BD%93%E5%AD%97%E7%AC%A6"><span class="toc-number">9.</span> <span class="toc-text">HTML实体字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-URL"><span class="toc-number">10.</span> <span class="toc-text">HTML URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-lt-DOCTYPE-gt"><span class="toc-number">11.</span> <span class="toc-text">HTML &lt;!DOCTYPE&gt;</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
