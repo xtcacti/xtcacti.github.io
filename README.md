@@ -30,6 +30,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ---
 hexo new HTML基础
-
----
-Ctrl Shift V: 预览md文档
