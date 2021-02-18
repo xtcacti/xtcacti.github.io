@@ -29,8 +29,8 @@ tags: HTML
     - `preload=''`: 若有autoload忽略此属性
     - [video标签还有一些属性 方法和事件...](https://www.w3school.com.cn/html5/html_5_video_dom.asp)
     - video标签之间的文本是在不支持的浏览器中显示的
- ---
- ## HTML表单属性
+---
+## HTML表单属性
 - `<form>`属性：
   - autocomplete
   - novalidate
@@ -39,7 +39,7 @@ tags: HTML
   - autofocus
   - placeholder
   - required
- ---
+---
 ## HTML拖放
 1. 被拖动的元素要首先设置为可拖动
 2. 触发开始拖动的事件，把被拖元素的数据类型和值给到事件
@@ -81,6 +81,7 @@ function drop(event){
   </script>
   ```
 - 还可以画线条、圆、渐变色、图片...
+
 ### HTML svg
 - SVG - Scalable Vector Graphics 可伸缩 矢量 图形
 - 使用XML定义图形
@@ -92,7 +93,9 @@ function drop(event){
 - 可添加js事件处理器
 ---
 ## HTML 地理定位
+
 ---
+
 ## HTML Web存储
 - localStroage: 没有时间限制的数据存储
 - sessionStorage: 针对一个session的数据存储，关闭浏览器，数据删除
@@ -131,7 +134,9 @@ function drop(event){
 ---
 ## HTML Web Worker
 [ref here](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
+
 ---
 ## HTML server sent event
 [ref here](http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html)
+
 > 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除
