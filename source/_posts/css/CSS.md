@@ -43,7 +43,8 @@ tags:
   - 子元素想拥有自己的属性，可针对子元素单独创建CSS规则
 ---
 
-- 派生选择器(上下文选择器):根据元素在其位置的上下文关系来定义样式
+## 派生选择器(上下文选择器，后代选择器)
+- 根据元素在其位置的上下文关系来定义样式
   ```
   li strong {
     font-style: italic;
@@ -58,6 +59,28 @@ tags:
   <li>我是正常的字体。</li>
   </ol>
   ```
+
+## 子元素选择器
+- 只能选择作为某元素的子元素的元素
+  ```
+  h1>strong{
+      color:black;
+  }
+  ```
+## 相邻兄弟选择器
+
+## 伪类
+
+## 伪元素
+
+## 元素选择器(类型选择器)
+- 就是以元素作为选择器喽
+  ```
+  html{
+      color:black;
+  }
+  ```
+
 ## id选择器
 - id选择器以`#`来定义(id在元素中必须是唯一的)
   ```
@@ -101,6 +124,8 @@ tags:
 	background: #666;
 	} 
   ```
+
+
 ## 属性选择器
 - 对带有指定属性的HTML元素设置样式，而不仅限于class和id，通常用于设置表单样式
 - `[attribute]`:选取有这个属性的
@@ -121,6 +146,7 @@ tags:
   ```
 
 ---
+
 ## 如何创建CSS
 - 外部样式表
  ```
@@ -197,9 +223,85 @@ tags:
 - `font-variant`:设置小型大写字母 `small-caps`
 - `font-weight`:设置文本的粗细 `normal bold 900`
 - `font-size`:字体大小，与标题元素两回事，`60px 3.75em`
+
 ### CSS链接
+链接的4种状态
+- `a:link`：未被访问的
+- `a:visited`：访问过后的
+- `a:hover`：鼠标悬停时的
+- `a:active`：链接被点击时的
+- `text-decoration`
+- `background-color`
+- *`a:hover`必须位于a:link和a:visited之后*
+- *`a:active`必须位于a:hover之后*
+
 ### CSS列表
+- `list-style`:type+position+image
+- `list-style-image`
+- `list-style-position`:inside outside(默认值) inherit
+- `list-style-type`:disc(defalut) circle square decimal...
+
 ### CSS表格
+- `border-collapse`:collapse seperate 是否将表格边框合并
+- `border-spacing`:设置表格边框之间的距离
+- `caption-side`:top bottom inherit 表格标题相对table的位置
+- `empty-cells`:show hide inherit 空白单元格是否显示
+- `table-layout`:automatic fixed inherit 表格布局
+
 ### CSS轮廓
+轮廓位于元素边框外围，可以起到突出元素的作用
+- `outline`
+- `outline-color`
+- `outline-style`
+- `outline-width`
+
+
+## CSS框模型
+![框模型](https://www.w3school.com.cn/i/ct_boxmodel.gif)
+- element
+- padding
+  - padding-top
+  - padding-right
+  - padding-bottom
+  - padding-left
+- border
+  - border-top
+  - border-top-color
+  - border-top-style
+  - border-top-width
+  - border-right
+  - border-bottom
+  - border-left
+  - ...
+- margin:外边距会有一个合并的概念，块元素之间不是累加的外边距，而是合并
+  - margin-top
+  - margin-right
+  - margin-bottom
+  - margin-left
+
+## CSS定位
+- `display`属性值：一切皆为框
+  - none:不显示
+  - block:转换为块级元素
+  - inline:转换为内联元素
+  - inline-block:转换为行内块元素
+  - list-item:转换为列表
+- `position`属性值：
+  - static:正常的
+  - relative:元素框仍保持原来的位置，相对于原来位置进行偏移
+  - absolute:元素框脱离文档流，相对于元素包含块进行偏移
+  - fixed:元素框脱离文档流，类似absolute，只不过，元素包含块是视窗本身
+- `float`
+  - none:元素不浮动,显示其在文本出现的位置
+  - right:元素向右浮动
+  - left:元素向左浮动
+  - inherit:
+- `clear`:规定元素的那一侧不允许出现浮动元素
+  - left:
+  - right:
+  - both:
+  - none:
+  - inherit:
+
 
 
