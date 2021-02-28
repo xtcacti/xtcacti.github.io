@@ -366,7 +366,7 @@ var arr = [1,4,2,3];
 
 var d = new Date(年，月，日，时，分，秒，毫秒);
 
-- 其中只有getDate()获取几号是从1开始。
+- 其中只有 getDate()获取几号是从 1 开始。
 - JS 日期将存储为自 1970 年 1 月 1 日 00:00:00 UTC 以来的毫秒数.
   |format |out|
   |:----|:----|
@@ -378,24 +378,27 @@ var d = new Date(年，月，日，时，分，秒，毫秒);
   |d.toLocaleTimeString()|"9:44:38 PM"|
   |d.toLocaleString()|"2/28/2021, 9:44:38 PM"|
 
-
 ## JS Math
+
 - Math.round(3.4); //3 -> 四舍五入
-- Math.pow(2,3); //8 -> 2的3次方
-- Math.sqrt(64); //8 -> 64的开方
-- Math.abs(-3); //3 -> -3的绝对值
-- Math.ceil(3.4); //4 -> 3.4入(天花板)
-- Math.floor(3.6); //3 -> 3.6舍(地板)
+- Math.pow(2,3); //8 -> 2 的 3 次方
+- Math.sqrt(64); //8 -> 64 的开方
+- Math.abs(-3); //3 -> -3 的绝对值
+- Math.ceil(3.4); //4 -> 3.4 入(天花板)
+- Math.floor(3.6); //3 -> 3.6 舍(地板)
 - Math.random(); //返回 [0,1) 之间的随机数
-- Math.floor()和Math.randon()一起用：
-  - Math.floor(Math.random()*10); //[0,9]
-  - Math.floor(Math.random()*10)+1; //[0,10]
-  - Math.floor(Math.random()*11); //[0,10]
-  - Math.floor(Math.random()*(max-min))+min; //[min,max)
-  - Math.floor(Math.randon()*(max-min+1))+min; //[min,max]
+- Math.floor()和 Math.randon()一起用：
+  - Math.floor(Math.random()\*10); //[0,9]
+  - Math.floor(Math.random()\*10)+1; //[0,10]
+  - Math.floor(Math.random()\*11); //[0,10]
+  - Math.floor(Math.random()\*(max-min))+min; //[min,max)
+  - Math.floor(Math.randon()\*(max-min+1))+min; //[min,max]
 
 ## Hoisting & 严格模式
+
 - Hoisting:变量提升 var，可以先使用变量再声明变量
 - 严格模式："use strict;" 禁止使用坏语法
 
 
+
+> 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除
