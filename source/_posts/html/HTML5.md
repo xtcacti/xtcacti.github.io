@@ -7,6 +7,7 @@ tags: HTML
 ## HTML5 标签
 
 - 布局标签、语义化标签
+  - `<main>`
   - `<header>`
   - `<nav>`
   - `<section>`
