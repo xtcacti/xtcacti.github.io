@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="回退到某一版本: git reset --hard 版本号 HEAD指向当前版本：git reset --hard HEAD   声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除">
+    <meta name="description" content="w3school 阿西河">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git">
-<meta property="og:url" content="https://xtcacti.github.io/2021/02/06/others/git/index.html">
+<meta property="og:title" content="ref">
+<meta property="og:url" content="https://xtcacti.github.io/2021/03/01/ref/index.html">
 <meta property="og:site_name" content="xtcacti">
-<meta property="og:description" content="回退到某一版本: git reset --hard 版本号 HEAD指向当前版本：git reset --hard HEAD   声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除">
+<meta property="og:description" content="w3school 阿西河">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-06T22:38:14.000Z">
+<meta property="article:published_time" content="2021-03-01T12:05:07.000Z">
 <meta property="article:modified_time" content="2021-03-01T14:31:31.696Z">
 <meta property="article:author" content="xtcacti">
-<meta property="article:tag" content="Git">
+<meta property="article:tag" content="ref">
 <meta name="twitter:card" content="summary">
     
     
@@ -37,7 +37,7 @@
       
     
     <!-- title -->
-    <title>git</title>
+    <title>ref</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -77,10 +77,10 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/2021/02/06/others/%E6%9C%AF%E8%AF%AD/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" href="/2021/03/01/testme/testmyjs/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
-        <li><a class="icon" href="/2021/02/05/html/HTML5/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" href="/2021/03/01/testme/testmycss/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -93,17 +93,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/02/06/others/git/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/02/06/others/git/&text=git"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/02/06/others/git/&is_video=false&description=git"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=git&body=Check out this article: https://xtcacti.github.io/2021/02/06/others/git/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/02/06/others/git/&name=git&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/02/06/others/git/&t=git"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/03/01/ref/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/03/01/ref/&text=ref"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/03/01/ref/&is_video=false&description=ref"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ref&body=Check out this article: https://xtcacti.github.io/2021/03/01/ref/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/03/01/ref/&name=ref&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/03/01/ref/&t=ref"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -120,7 +120,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        git
+        ref
     </h1>
 
 
@@ -132,7 +132,7 @@
       
     <div class="postdate">
       
-        <time datetime="2021-02-06T22:38:14.000Z" itemprop="datePublished">2021-02-06</time>
+        <time datetime="2021-03-01T12:05:07.000Z" itemprop="datePublished">2021-03-01</time>
         
       
     </div>
@@ -143,7 +143,7 @@
       
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link-link" href="/tags/Git/" rel="tag">Git</a>
+        <a class="tag-link-link" href="/tags/ref/" rel="tag">ref</a>
     </div>
 
 
@@ -153,12 +153,9 @@
 
   <div class="content" itemprop="articleBody">
     <ul>
-<li>回退到某一版本: <code>git reset --hard 版本号</code></li>
-<li>HEAD指向当前版本：<code>git reset --hard HEAD</code></li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/">w3school</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.axihe.com/">阿西河</a></li>
 </ul>
-<blockquote>
-<p>声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除</p>
-</blockquote>
 
   </div>
 </article>
@@ -189,17 +186,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/02/06/others/git/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/02/06/others/git/&text=git"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/02/06/others/git/&is_video=false&description=git"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=git&body=Check out this article: https://xtcacti.github.io/2021/02/06/others/git/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/02/06/others/git/&title=git"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/02/06/others/git/&name=git&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/02/06/others/git/&t=git"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/03/01/ref/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/03/01/ref/&text=ref"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/03/01/ref/&is_video=false&description=ref"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ref&body=Check out this article: https://xtcacti.github.io/2021/03/01/ref/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/03/01/ref/&title=ref"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/03/01/ref/&name=ref&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/03/01/ref/&t=ref"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
