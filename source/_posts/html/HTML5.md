@@ -30,6 +30,10 @@ tags: HTML
     - `preload=''`: 若有autoload忽略此属性
     - [video标签还有一些属性 方法和事件...](https://www.w3school.com.cn/html5/html_5_video_dom.asp)
     - video标签之间的文本是在不支持的浏览器中显示的
+
+- 图像
+  - `<figure>` 用于内部插入图像img
+  - `<figcaption>` 定义figure的标题
 ---
 ## HTML表单属性
 - `<form>`属性：
