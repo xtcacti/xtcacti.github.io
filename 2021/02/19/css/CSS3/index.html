@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="border-raduis border-image box-shadow background-size background-origin background-image可以同时用几个图片了，多重背景图片 text-shadow text-wrap @font-face   声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除">
+    <meta name="description" content="样式 border-raduis border-image box-shadow background-size background-origin background-image可以同时用几个图片了，多重背景图片 text-shadow text-wrap @font-face  弹性盒子 Flex Box弹性盒子flexbox是CSS3的一种新的布局方式，当屏幕大小不同，设备类型不同时，采用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3">
 <meta property="og:url" content="https://xtcacti.github.io/2021/02/19/css/CSS3/index.html">
 <meta property="og:site_name" content="xtcacti">
-<meta property="og:description" content="border-raduis border-image box-shadow background-size background-origin background-image可以同时用几个图片了，多重背景图片 text-shadow text-wrap @font-face   声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除">
+<meta property="og:description" content="样式 border-raduis border-image box-shadow background-size background-origin background-image可以同时用几个图片了，多重背景图片 text-shadow text-wrap @font-face  弹性盒子 Flex Box弹性盒子flexbox是CSS3的一种新的布局方式，当屏幕大小不同，设备类型不同时，采用">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2016/04/2259AD60-BD56-4865-8E35-472CEABF88B2.jpg">
 <meta property="article:published_time" content="2021-02-19T22:22:54.000Z">
-<meta property="article:modified_time" content="2021-03-01T14:31:31.696Z">
+<meta property="article:modified_time" content="2021-03-03T15:20:07.383Z">
 <meta property="article:author" content="xtcacti">
 <meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2016/04/2259AD60-BD56-4865-8E35-472CEABF88B2.jpg">
     
     
       
@@ -108,7 +110,7 @@
 
     </div>
     <div id="toc">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%B9%E6%80%A7%E7%9B%92%E5%AD%90-Flex-Box"><span class="toc-number">2.</span> <span class="toc-text">弹性盒子 Flex Box</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-Media-Quiery"><span class="toc-number">3.</span> <span class="toc-text">多媒体查询 Media Quiery</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -152,7 +154,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <ul>
+    <h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><ul>
 <li><code>border-raduis</code></li>
 <li><code>border-image</code></li>
 <li><code>box-shadow</code></li>
@@ -162,6 +164,87 @@
 <li><code>text-shadow</code></li>
 <li><code>text-wrap</code></li>
 <li><code>@font-face</code></li>
+</ul>
+<h2 id="弹性盒子-Flex-Box"><a href="#弹性盒子-Flex-Box" class="headerlink" title="弹性盒子 Flex Box"></a>弹性盒子 Flex Box</h2><p>弹性盒子flexbox是CSS3的一种新的布局方式，当屏幕大小不同，设备类型不同时，采用flexbox就会对容器中的子元素进行合理的分配，合理的排列对齐，合理的分配空白。<br>flexbox = flex container + flex items</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/ZEBRGPv">display</a></p>
+<ul>
+<li>flex<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.flex-container&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    width: 400px;</span><br><span class="line">    height: 250px;</span><br><span class="line">    background-color: #bdc3c7</span><br><span class="line">&#125;</span><br><span class="line">.flex-item&#123;</span><br><span class="line">    background-color: #2980b9;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    margin: 10px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class&#x3D;&#39;flex-container&#39;&gt;</span><br><span class="line">    &lt;div class&#x3D;&#39;flex-item&#39;&gt;item1&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&#39;flex-item&#39;&gt;item2&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&#39;flex-item&#39;&gt;item3&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/gOLKpJa">flex-direction</a></p>
+<ul>
+<li>row</li>
+<li>row-reverse</li>
+<li>column </li>
+<li>column-reverse<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.flex-container&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    flex-direction:row;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/rNWKOar">justiify-content</a> flex-items沿着flex-container的主轴线main axis对齐</p>
+<ul>
+<li>flex-start：  居左 不分割</li>
+<li>flex-end： 居右 不分割</li>
+<li>center： 居中 不分割</li>
+<li>space-between： 只中间分割</li>
+<li>space-around： 环绕分割<br><img src="https://www.runoob.com/wp-content/uploads/2016/04/2259AD60-BD56-4865-8E35-472CEABF88B2.jpg" alt="justify-content"></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/YzpvyWP">align-items</a> flex-items沿着flex-container的纵轴对齐</p>
+<ul>
+<li>flex-start： 居上 items没height，延伸到自身内容的height</li>
+<li>flex-end： 居下 items没height，延伸到自身内容的height</li>
+<li>center： 居中 items没height，延伸到自身内容的height</li>
+<li>baseline： 居上 items没height，延伸到自身内容的height</li>
+<li>stretch： 居上 items没height，延伸到container的height</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/jOVKWGo">flex-wrap</a> flex-container的子元素换行方式 container.width &gt; item.width</p>
+<ul>
+<li>nowrap：默认 item.width溢出</li>
+<li>wrap：溢出的item 换行放置 断行（上下）</li>
+<li>wrap-reverse：(下上)</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/eYBKJKJ">align-content</a> 用于修改flex-wrap非nowrap时的行为，不是修改item的对齐，而是修改各个行的</p>
+<ul>
+<li>stretch：默认 每一行会伸展一部分height，均匀占满空间</li>
+<li>flex-start：向上挤</li>
+<li>flex-end：向下挤</li>
+<li>center：居中</li>
+<li>space-between：中间分割</li>
+<li>space-around：环绕分割</li>
+</ul>
+</li>
+<li><p>flex-item的属性</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/bGBKEyP">order</a> 通过整数大小来定义item的排列顺序,小的在前，可以为负 </li>
+<li><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/oNYyxzy">margin</a> 完美居中</li>
+<li><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/qBqKZqY">align-self</a> 设置item自身在纵轴上的一个对齐方式<ul>
+<li>auto</li>
+<li>flex-start</li>
+<li>flex-end</li>
+<li>center</li>
+<li>baseline</li>
+<li>stretch</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/pen/xxRzVdW">flex</a> flex-item如何分配空间</li>
+</ul>
+</li>
+</ul>
+<h2 id="多媒体查询-Media-Quiery"><a href="#多媒体查询-Media-Quiery" class="headerlink" title="多媒体查询 Media Quiery"></a>多媒体查询 Media Quiery</h2><p><a target="_blank" rel="noopener" href="https://codepen.io/xtcacti/details/QWGxNXv">@media</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media not|only mediatype and(expresstions)&#123;</span><br><span class="line">    CSS code...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>操作符</p>
+<ul>
+<li>not</li>
+<li>only</li>
+</ul>
+<p>多媒体类型</p>
+<ul>
+<li>all：所有多媒体设备</li>
+<li>print：打印机</li>
+<li>screen：电脑、平板、智能手机</li>
+<li>speech：屏幕阅读器</li>
 </ul>
 <blockquote>
 <p>声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除</p>
@@ -191,7 +274,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%B9%E6%80%A7%E7%9B%92%E5%AD%90-Flex-Box"><span class="toc-number">2.</span> <span class="toc-text">弹性盒子 Flex Box</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-Media-Quiery"><span class="toc-number">3.</span> <span class="toc-text">多媒体查询 Media Quiery</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
