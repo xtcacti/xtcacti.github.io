@@ -15,6 +15,20 @@ tags: CSS
 - `text-wrap`
 - `@font-face`
 
+## 用户界面
+- [resize](https://codepen.io/xtcacti/pen/RwoJvQv?editors=1100) 搭配overflow 指定用户是否可以调整该元素的大小
+  - none： 默认
+  - both： 无法调整
+  - horizontal： 可调整宽度
+  - vertical： 可调整高度
+- [box-sizing](https://codepen.io/xtcacti/pen/XWNYGvw) 
+  - content-box：默认值 W3C标准模式 width/height = width/height(不包括padding border)
+  - border-box：怪异模式 width/height = border+padding+width/height
+  - inherit：从父级继承
+- [outline-offset](https://codepen.io/xtcacti/pen/MWbXRWL) 搭配outline属性看效果 轮廓不占用空间
+  - length： border往外的距离
+  - inherit
+
 ## 弹性盒子 Flex Box
 弹性盒子flexbox是CSS3的一种新的布局方式，当屏幕大小不同，设备类型不同时，采用flexbox就会对容器中的子元素进行合理的分配，合理的排列对齐，合理的分配空白。
 flexbox = flex container + flex items
@@ -45,7 +59,7 @@ flexbox = flex container + flex items
 
 - [flex-direction](https://codepen.io/xtcacti/pen/gOLKpJa)
   - row
-  - row-reverse
+  - row-reverse  
   - column 
   - column-reverse
 ```

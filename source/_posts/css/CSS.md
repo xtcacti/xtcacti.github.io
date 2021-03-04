@@ -248,13 +248,22 @@ tags: CSS
 - `empty-cells`:show hide inherit 空白单元格是否显示
 - `table-layout`:automatic fixed inherit 表格布局
 
-### CSS轮廓
-轮廓位于元素边框外围，可以起到突出元素的作用
-- `outline`
-- `outline-color`
-- `outline-style`
-- `outline-width`
-
+## CSS轮廓 Outline
+轮廓位于元素边框border外围，可以起到突出元素的作用
+- [outline](https://codepen.io/xtcacti/pen/gOLKywX)
+- [outline-color](https://codepen.io/xtcacti/pen/abBKxpO)
+- [outline-style](https://codepen.io/xtcacti/pen/abBKxpO)
+  - dotted
+  - dashed
+  - double
+  - ...
+  - inherit
+- [outline-width](https://codepen.io/xtcacti/pen/abBKxpO)
+  - thin
+  - medium
+  - thick
+  - length
+  - inherit
 
 ## CSS框模型
 ![框模型](https://www.w3school.com.cn/i/ct_boxmodel.gif)
@@ -279,7 +288,7 @@ tags: CSS
   - margin-bottom
   - margin-left
 
-## CSS定位
+## CSS定位 Position
 - `display`属性值：一切皆为框
   - none:不显示
   - block:转换为块级元素
@@ -287,10 +296,12 @@ tags: CSS
   - inline-block:转换为行内块元素
   - list-item:转换为列表
 - `position`属性值：
-  - static:正常的
-  - relative:元素框仍保持原来的位置，相对于原来位置进行偏移
-  - absolute:元素框脱离文档流，相对于元素包含块进行偏移
-  - fixed:元素框脱离文档流，类似absolute，只不过，元素包含块是视窗本身
+  - [static](https://codepen.io/xtcacti/pen/bGBjEax)：遵循正常的文档流，不会受到top/bottom/right/left的影响
+  - [relative](https://codepen.io/xtcacti/pen/abBjNzJ)：元素框仍保持原来的位置，相对于原来位置进行偏移，常用来作为absolute元素的容器块
+  - [absolute](https://codepen.io/xtcacti/pen/yLVqOKa)：元素框脱离文档流，不占空间，可和其他元素重叠，相对于最近的以定位的父元素，若没有父元素就是html 
+  - [fixed](https://codepen.io/xtcacti/pen/XWNBXxm)：元素框脱离文档流， 相对于浏览器窗口固定 窗口滚动也不受干扰 不占空间 可和其他元素重叠
+  - [sticky](https://codepen.io/xtcacti/pen/KKNBMOe?editors=1100)：在relative与fixed之间转换，前提是top、right、left、bottom这些阈值的干预，否则就是relative
+- [z-index](https://codepen.io/xtcacti/pen/NWbBRbz)：若不指定此属性，则最后定位在HTML的元素将会显示在最上层最前面，数字越小，越位于最下层最后面
 - `float`
   - none:元素不浮动,显示其在文本出现的位置
   - right:元素向右浮动
@@ -302,6 +313,16 @@ tags: CSS
   - both:
   - none:
   - inherit:
+
+## CSS Overflow
+- [overflow](https://codepen.io/xtcacti/pen/VwmBejK) 属性值：
+  - visiable：默认值 内容不改 溢出显示在border外
+  - hidden：内容溢出删改 溢出内容不可见
+  - scroll：内容不改 可通过滚轮查看
+  - auto：内容不溢出，无滚轮 内容溢出，有滚轮
+  - inherit：
+- overflow-x：横向滚轮
+- overflow-y：纵向滚轮
 
 
 > 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除
