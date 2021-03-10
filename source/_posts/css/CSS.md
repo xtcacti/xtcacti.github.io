@@ -323,6 +323,8 @@ tags: CSS
   - inherit：
 - overflow-x：横向滚轮
 - overflow-y：纵向滚轮
+- tips:
+  - overflow的使用,需要预设元素高度
 
 
 > 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除

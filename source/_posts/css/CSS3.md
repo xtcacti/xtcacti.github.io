@@ -128,4 +128,80 @@ flexbox = flex container + flex items
 - screen：电脑、平板、智能手机
 - speech：屏幕阅读器
 
+## 网格布局 Grid
+[Grid](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html) VS Flex:
+- Gird是二维布局：将容器划分为 行 和 列，产生单元格，然后指定项目所在那个单元格 。
+- Flex是一维布局：轴线布局，只能指定项目相对于周线的位置。
+
+最外层div是`容器`,内层的3个div是`项目`,项目是能是容器的顶层子元素，不包含`p`元素：
+```
+<div>
+  <div><p>1</p></div>
+  <div><p>2</p></div>
+  <div><p>3</p></div>
+</div>
+```
+基本概念：
+- 容器 & 项目
+- 行 & 列
+- 单元格
+- 网格线
+- 容器属性
+  - [display](https://codepen.io/xtcacti/pen/poNxQOR) 设为网格布局以后，容器的项目的float、diplay：inline-block|table-cell、vertical-align等设置都将失效。属性值：
+    - grid：块级
+    - inline-grid:行级
+  - [grid-template-columns](https://codepen.io/xtcacti/pen/gOLBZYb)
+  - [grid-template-rows](https://codepen.io/xtcacti/pen/gOLBZYb`) 关键字如下：
+    - repeat()
+    - auto-fill
+    - fr
+    - minmax
+    - auto
+    - 网格线名称
+    - 布局实例
+  - [grid-row-gap](https://codepen.io/xtcacti/pen/GRNYPBN)
+  - [grid-column-gap](https://codepen.io/xtcacti/pen/GRNYPBN)
+  - [grid-gap](https://codepen.io/xtcacti/pen/GRNYPBN)
+  - [grid-template-areas](https://codepen.io/xtcacti/pen/QWGZzzm)
+  - [grid-auto-flow](https://codepen.io/xtcacti/pen/abBRPgo)
+    - row
+    - column
+    - row dense
+    - column dense
+  - [justify-items](https://codepen.io/xtcacti/pen/xxRyMgZ)
+    - start
+    - end
+    - center
+    - stretch
+  - [align-items](https://codepen.io/xtcacti/pen/LYbgqyR)
+  - [place-items](https://codepen.io/xtcacti/pen/qBqJgja)
+  - [justify-content](https://codepen.io/xtcacti/pen/YzpJBzp)
+    - start
+    - end
+    - center
+    - stretch
+    - space-around
+    - space-between
+  - [align-content](https://codepen.io/xtcacti/pen/GRNYzZv)
+  - [place-content](https://codepen.io/xtcacti/pen/gOLBqMX)
+  - [grid-auto-columns/grid-template-columns]()
+  - [grid-auto-rows/grid-template-rows]()
+  - [grid-template]()= grid-template-columns + grid-template-rows + grid-template-area
+  - [grid]()= grid-template-columns + grid-template-rows + grid-template-area + grid-auto-rows + grid-auto-columns + grid-auto-flow
+- 项目属性
+  - [grid-column-start](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-column-end](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-row-start](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-row-end](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-column](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-row](https://codepen.io/xtcacti/pen/abBRPgo)
+  - [grid-area](https://codepen.io/xtcacti/pen/NWbOoze)
+  - [justify-self]()： 与justify-item效果一样，只是作用在单个item上
+  - [align-self]()： align-item效果一样，只是作用在单个item上
+  - [place-self]()： place-item效果一样，只是作用在单个item上
+
+
+
+
+
 > 声明：本站所有内容仅供个人学习娱乐笔记所用，如涉侵权，请联系删除
