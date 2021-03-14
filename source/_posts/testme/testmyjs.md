@@ -1,7 +1,7 @@
 ---
 title: testmyjs
 date: 2021-03-01 12:46:44
-tags: testme
+tags: Javascript
 ---
 
 ## JS

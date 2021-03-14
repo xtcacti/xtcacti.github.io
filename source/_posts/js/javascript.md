@@ -352,7 +352,7 @@ var arr = ['aaa','bbb','ccc','ddd'];
 - `arr.splice(1,3);` //['bbb','ccc','ddd'] -> 返回删除的元素，从索引 1 删掉 3 个元素
 - `arr.concat('hello','hi')`;//['aaa','bbb','ccc','ddd','hello','hi'] -> 数组合并，不改变原来数组，返回一个新的数组
 - `arr.slice(1);` //['bbb'] -> 从 arr 中截取元素生成新的数组，不改变原有数组
-- `arr.slice(1,3);` //['bbb','ccc'] -> 其实索引，终止索引，前闭后开 [1,3)
+- `arr.slice(1,3);` //['bbb','ccc'] -> 起始索引，终止索引，前闭后开 [1,3)
 
 var arr = [1,4,2,3];
 
