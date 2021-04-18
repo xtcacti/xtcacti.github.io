@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="what is Jmeter Performance test application Build using java Free &amp; Open Source Recording CLI Reports  install Jmeter check java is installed on your system   java -version on cmd   download Jmete">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jmeter">
+<meta property="og:url" content="https://xtcacti.github.io/2021/04/17/test/jmeter/index.html">
+<meta property="og:site_name" content="xtcacti">
+<meta property="og:description" content="what is Jmeter Performance test application Build using java Free &amp; Open Source Recording CLI Reports  install Jmeter check java is installed on your system   java -version on cmd   download Jmete">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-17T18:10:37.000Z">
+<meta property="article:modified_time" content="2021-04-18T03:03:20.929Z">
+<meta property="article:author" content="xtcacti">
+<meta property="article:tag" content="jmeter">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>jmeter</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/xtcacti">Github</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2021/04/17/tobebetter/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/04/17/test/jmeter/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&text=jmeter"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&is_video=false&description=jmeter"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=jmeter&body=Check out this article: https://xtcacti.github.io/2021/04/17/test/jmeter/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&name=jmeter&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/04/17/test/jmeter/&t=jmeter"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        jmeter
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">xtcacti</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-04-17T18:10:37.000Z" itemprop="datePublished">2021-04-17</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/jmeter/" rel="tag">jmeter</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="what-is-Jmeter"><a href="#what-is-Jmeter" class="headerlink" title="what is Jmeter"></a>what is Jmeter</h2><ul>
+<li>Performance test application</li>
+<li>Build using java</li>
+<li>Free &amp; Open Source</li>
+<li>Recording</li>
+<li>CLI</li>
+<li>Reports</li>
+</ul>
+<h2 id="install-Jmeter"><a href="#install-Jmeter" class="headerlink" title="install Jmeter"></a>install Jmeter</h2><ol>
+<li>check java is installed on your system</li>
+</ol>
+<ul>
+<li><code>java -version</code> on cmd</li>
+</ul>
+<ol start="2">
+<li>download Jmeter and unzip</li>
+<li>start Jmeter</li>
+</ol>
+<ul>
+<li>Windows -&gt; jmeter/bin -&gt; jmeter.bat</li>
+<li>Mac -&gt; open terminal -&gt; jmeter/bin -&gt; sh jmeter.sh</li>
+</ul>
+<h2 id="create-first-Jmeter-test"><a href="#create-first-Jmeter-test" class="headerlink" title="create first Jmeter test"></a>create first Jmeter test</h2><ol>
+<li>Start Jmeter</li>
+<li>Create a TestPlan</li>
+<li>Create a Thread Group(Users)</li>
+<li>Add a Sampler(Http)</li>
+<li>Add Listeners</li>
+<li>Run the Test</li>
+</ol>
+<h2 id="Jmeter-Listeners-Reporting"><a href="#Jmeter-Listeners-Reporting" class="headerlink" title="Jmeter Listeners(Reporting)"></a>Jmeter Listeners(Reporting)</h2><ul>
+<li>used for reporting</li>
+<li>listener = elements that gather information about the performance test used to view results/metrics of the test</li>
+<li>1000 ms = 1 sec</li>
+</ul>
+<ol>
+<li>View Results in Table</li>
+</ol>
+<ul>
+<li>Latency: start get response - finished response</li>
+</ul>
+<ol start="2">
+<li>View Result Tree</li>
+<li>Aggregate Report</li>
+<li>Graph Results</li>
+<li>Summary Report</li>
+<li>Simple Data Writer</li>
+</ol>
+<h2 id="Assertions"><a href="#Assertions" class="headerlink" title="Assertions"></a>Assertions</h2><ul>
+<li>Assertions = check on the Request/Response</li>
+</ul>
+<ol>
+<li>Response Assertion</li>
+<li>Duration Assertion</li>
+<li>Size Assertion</li>
+<li>HTML Assertion</li>
+<li>XML JSON Assertion</li>
+<li>XPATH Assertion</li>
+</ol>
+<h2 id="Jmeter-HTTP-s-Test-Script-Recorder"><a href="#Jmeter-HTTP-s-Test-Script-Recorder" class="headerlink" title="Jmeter HTTP(s) Test Script Recorder"></a>Jmeter HTTP(s) Test Script Recorder</h2><ul>
+<li>what</li>
+<li>why</li>
+<li>when</li>
+<li>how</li>
+</ul>
+<ol>
+<li>how to record your test on Jmeter?</li>
+<li>how to add &amp; use Test Script Recorder?</li>
+<li>how to add &amp; use Recording Controller?</li>
+<li>how to use proxy on Firefox,Chrome and System?</li>
+<li>how to add SSL Certificate?</li>
+<li>how to do Request Filter?</li>
+<li>how to use Recording Template?</li>
+</ol>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/xtcacti">Github</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://xtcacti.github.io/2021/04/17/test/jmeter/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&text=jmeter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&is_video=false&description=jmeter"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=jmeter&body=Check out this article: https://xtcacti.github.io/2021/04/17/test/jmeter/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&title=jmeter"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://xtcacti.github.io/2021/04/17/test/jmeter/&name=jmeter&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://xtcacti.github.io/2021/04/17/test/jmeter/&t=jmeter"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    xtcacti
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/xtcacti">Github</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
