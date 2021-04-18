@@ -95,6 +95,7 @@ Scenario:
     PageFactory.initElements(new AjaxElementLocatorFactory(driver,30),this);
     ```
 
+
 ## Tags
 1. Features and Scenarios can be marked by tags
 2. in test runner we canrun specific tags
