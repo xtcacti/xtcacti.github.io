@@ -14,7 +14,7 @@
 <meta property="og:description" content="what is Jmeter Performance test application Build using java Free &amp; Open Source Recording CLI Reports  install Jmeter check java is installed on your system   java -version on cmd   download Jmete">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-17T18:10:37.000Z">
-<meta property="article:modified_time" content="2021-04-18T03:03:20.929Z">
+<meta property="article:modified_time" content="2021-04-19T11:47:02.800Z">
 <meta property="article:author" content="xtcacti">
 <meta property="article:tag" content="jmeter">
 <meta name="twitter:card" content="summary">
@@ -106,7 +106,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-use-Blazemeter-to-Record-JMeter-Tests"><span class="toc-number">7.</span> <span class="toc-text">How to use Blazemeter to Record JMeter Tests</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-get-data-from-csv-file"><span class="toc-number">8.</span> <span class="toc-text">How to get data from csv file</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JMeter-Config-Elements-for-HTTP-Web-Test-Plan"><span class="toc-number">9.</span> <span class="toc-text">JMeter Config Elements - for HTTP (Web Test Plan)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-run-JMeter-from-command-line"><span class="toc-number">10.</span> <span class="toc-text">How to run JMeter from command line</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hor-to-create-HTML-Reports-from-command-line-amp-GUI"><span class="toc-number">11.</span> <span class="toc-text">Hor to create HTML Reports from command line &amp; GUI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-extend-JMeter-JMeter-plugins-manager"><span class="toc-number">12.</span> <span class="toc-text">How to extend JMeter | JMeter plugins manager</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-create-TEST-API-Request-in-JMter"><span class="toc-number">13.</span> <span class="toc-text">How to create TEST API Request in JMter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-create-a-SOAP-API-Request"><span class="toc-number">14.</span> <span class="toc-text">How to create a SOAP API Request</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Functions-amp-Veriables"><span class="toc-number">15.</span> <span class="toc-text">Functions &amp; Veriables</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -224,6 +224,134 @@
 <li>how to do Request Filter?</li>
 <li>how to use Recording Template?</li>
 </ol>
+<h2 id="How-to-use-Blazemeter-to-Record-JMeter-Tests"><a href="#How-to-use-Blazemeter-to-Record-JMeter-Tests" class="headerlink" title="How to use Blazemeter to Record JMeter Tests"></a>How to use Blazemeter to Record JMeter Tests</h2><ol>
+<li>create Blazemeter account</li>
+<li>get blazemeter extension</li>
+<li>login to Blazemeter</li>
+<li>record test</li>
+<li>save JMX</li>
+<li>Add JMX in JMeter and Run</li>
+</ol>
+<h2 id="How-to-get-data-from-csv-file"><a href="#How-to-get-data-from-csv-file" class="headerlink" title="How to get data from csv file"></a>How to get data from csv file</h2><ol>
+<li>Add - Config Element - CSV Data Set Config</li>
+<li>create csv file and add data</li>
+<li>refer csv file in JMeter’s csv data set config</li>
+<li>refer values from csv file using syntax ${variableName}</li>
+</ol>
+<h2 id="JMeter-Config-Elements-for-HTTP-Web-Test-Plan"><a href="#JMeter-Config-Elements-for-HTTP-Web-Test-Plan" class="headerlink" title="JMeter Config Elements - for HTTP (Web Test Plan)"></a>JMeter Config Elements - for HTTP (Web Test Plan)</h2><ul>
+<li>Elements that are executed before the sampler requests at the same level</li>
+<li>Configuration elements can be used to set up defaults and variables for later use by samplers. Note that these elements are processed at the start of the scope in which they are found, i.e. before any samplers in the same scope</li>
+<li>Demo app - <a target="_blank" rel="noopener" href="https://opensource-demo.orangehrmlive.com/">https://opensource-demo.orangehrmlive.com/</a></li>
+</ul>
+<h2 id="How-to-run-JMeter-from-command-line"><a href="#How-to-run-JMeter-from-command-line" class="headerlink" title="How to run JMeter from command line"></a>How to run JMeter from command line</h2><ul>
+<li>GUI consumes memoryy,slower</li>
+<li>integrate with any external process CI CD</li>
+</ul>
+<ol>
+<li>How to run JMeter from command line?</li>
+<li>How to log results?</li>
+</ol>
+<ul>
+<li>goto jemeterbin folder</li>
+<li>windows: <code>jmeter -n -t &quot;location of your test&quot; -l &quot;location of your result&quot;</code></li>
+<li>mac/linux: <code>sh jmeter -n -t &quot;location of your test&quot; -l &quot;location of your result&quot;</code></li>
+</ul>
+<ol start="3">
+<li>How ti see command line help and options?</li>
+</ol>
+<ul>
+<li><code>jmeter -h</code></li>
+<li><code>jemter.bat -?</code></li>
+</ul>
+<ol start="4">
+<li>How to run fomr any location on your system?</li>
+</ol>
+<ul>
+<li>add in Path env variables</li>
+</ul>
+<h2 id="Hor-to-create-HTML-Reports-from-command-line-amp-GUI"><a href="#Hor-to-create-HTML-Reports-from-command-line-amp-GUI" class="headerlink" title="Hor to create HTML Reports from command line &amp; GUI"></a>Hor to create HTML Reports from command line &amp; GUI</h2><ol>
+<li>How to create html dashboard reports from command line</li>
+<li>How to create html dashboard reports from standard csv result file</li>
+<li>Study the html dashboard reports</li>
+</ol>
+<ul>
+<li>create a test plan or use existing test plan</li>
+<li>open command line goto jmeter bin folder  </li>
+<li>generate report from run test plan <code>jmeter -n -t &quot;C:\Workspace\learn-automation\6-Jmeter\Test Plan - html report.jmx&quot; -l &quot;C:\Workspace\learn-automation\6-Jmeter\result-log.csv&quot; -e -o &quot;C:\Workspace\learn-automation\6-Jmeter\Reports&quot;</code></li>
+<li>generate report from csv result <code>jmeter -g &quot;C:\Workspace\learn-automation\6-Jmeter\result-log.csv&quot; -o &quot;C:\Workspace\learn-automation\6-Jmeter\Reports&quot;</code></li>
+</ul>
+<ol start="4">
+<li>How to generate from GUI?</li>
+</ol>
+<ul>
+<li>Tools - Generate html report</li>
+</ul>
+<h2 id="How-to-extend-JMeter-JMeter-plugins-manager"><a href="#How-to-extend-JMeter-JMeter-plugins-manager" class="headerlink" title="How to extend JMeter | JMeter plugins manager"></a>How to extend JMeter | JMeter plugins manager</h2><p>Plugins - <a target="_blank" rel="noopener" href="https://jmeter-plugins.org/">https://jmeter-plugins.org/</a></p>
+<ol>
+<li>find plugins</li>
+</ol>
+<ul>
+<li>download plugins manager jar form <a target="_blank" rel="noopener" href="https://jmeter-plugins.org/wiki/PluginsManager/">https://jmeter-plugins.org/wiki/PluginsManager/</a></li>
+</ul>
+<ol start="2">
+<li>install</li>
+</ol>
+<ul>
+<li>add jat to jmeter/lib/ext</li>
+<li>restart jmeter</li>
+<li>Options - JMeter Plugins Manager</li>
+</ul>
+<ol start="3">
+<li>uninstal</li>
+<li>upgrade</li>
+</ol>
+<h2 id="How-to-create-TEST-API-Request-in-JMter"><a href="#How-to-create-TEST-API-Request-in-JMter" class="headerlink" title="How to create TEST API Request in JMter"></a>How to create TEST API Request in JMter</h2><ul>
+<li>GET,POST,PUT,DELETE</li>
+<li>HTTP Request</li>
+<li>REST demo:<a target="_blank" rel="noopener" href="https://reqres.in/">https://reqres.in/</a></li>
+</ul>
+<h2 id="How-to-create-a-SOAP-API-Request"><a href="#How-to-create-a-SOAP-API-Request" class="headerlink" title="How to create a SOAP API Request"></a>How to create a SOAP API Request</h2><ol>
+<li>How to add Request Sampler</li>
+<li>How to add Headers</li>
+<li>How to add Authorsation</li>
+<li>How to add Body</li>
+<li>How to add Assertions</li>
+<li>How to run and check results</li>
+</ol>
+<ul>
+<li>SOAP demo:<a target="_blank" rel="noopener" href="http://www.dneonline.com/calculator.asmx?WSDL">http://www.dneonline.com/calculator.asmx?WSDL</a></li>
+<li>HTTP Request<ul>
+<li>Body(XML)</li>
+<li>Header(Content-Type, SOAPACTION)</li>
+</ul>
+</li>
+<li>Response Assertion</li>
+<li>Assertion Result</li>
+</ul>
+<h2 id="Functions-amp-Veriables"><a href="#Functions-amp-Veriables" class="headerlink" title="Functions &amp; Veriables"></a>Functions &amp; Veriables</h2><ol>
+<li>What are functions?</li>
+</ol>
+<ul>
+<li>methods used to populate fields in any other element of a test plan</li>
+<li>Syntax:<ul>
+<li><code>$&#123;__funcName&#125;</code></li>
+<li><code>$&#123;__funcName(var1,var2,...)&#125;</code></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>What are variables?</li>
+</ol>
+<ul>
+<li>contains that can store values which can be referred in any element within a thread</li>
+<li>Syntax:<ul>
+<li><code>$&#123;varName&#125;</code></li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>How to use functions and variables?</li>
+</ol>
 
   </div>
 </article>
@@ -249,7 +377,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-Jmeter"><span class="toc-number">1.</span> <span class="toc-text">what is Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-Jmeter"><span class="toc-number">2.</span> <span class="toc-text">install Jmeter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-first-Jmeter-test"><span class="toc-number">3.</span> <span class="toc-text">create first Jmeter test</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-Listeners-Reporting"><span class="toc-number">4.</span> <span class="toc-text">Jmeter Listeners(Reporting)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assertions"><span class="toc-number">5.</span> <span class="toc-text">Assertions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jmeter-HTTP-s-Test-Script-Recorder"><span class="toc-number">6.</span> <span class="toc-text">Jmeter HTTP(s) Test Script Recorder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-use-Blazemeter-to-Record-JMeter-Tests"><span class="toc-number">7.</span> <span class="toc-text">How to use Blazemeter to Record JMeter Tests</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-get-data-from-csv-file"><span class="toc-number">8.</span> <span class="toc-text">How to get data from csv file</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JMeter-Config-Elements-for-HTTP-Web-Test-Plan"><span class="toc-number">9.</span> <span class="toc-text">JMeter Config Elements - for HTTP (Web Test Plan)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-run-JMeter-from-command-line"><span class="toc-number">10.</span> <span class="toc-text">How to run JMeter from command line</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hor-to-create-HTML-Reports-from-command-line-amp-GUI"><span class="toc-number">11.</span> <span class="toc-text">Hor to create HTML Reports from command line &amp; GUI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-extend-JMeter-JMeter-plugins-manager"><span class="toc-number">12.</span> <span class="toc-text">How to extend JMeter | JMeter plugins manager</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-create-TEST-API-Request-in-JMter"><span class="toc-number">13.</span> <span class="toc-text">How to create TEST API Request in JMter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-create-a-SOAP-API-Request"><span class="toc-number">14.</span> <span class="toc-text">How to create a SOAP API Request</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Functions-amp-Veriables"><span class="toc-number">15.</span> <span class="toc-text">Functions &amp; Veriables</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
