@@ -270,10 +270,14 @@ tags: test
   - Micro FOcus 的 UFT(前身 QTP) (Bussiness Edition)
 - Native App
   - Appium
-    - IOS:集成 XCUITest
+    - iOS:集成 XCUITest
     - Android：集成 UIAutomator 和 Espresso
 
 ## 测试覆盖率
+### 需求覆盖率：面向需求
+- 将每一条软件需求和对应的测试建立一对多的映射关系，最终目标是保证测试可以覆盖每个需求，以保证软件产品的质量。
+- 
+### 代码覆盖率：面向技术
 
 ## 高效填写软件缺陷报告
 
