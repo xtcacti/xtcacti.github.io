@@ -1,7 +1,7 @@
 ---
 title: Javascript
 date: 2021-02-20 15:57:23
-tags: Javascript
+tags: frontend
 ---
 
 ## Javascript 能做咩？

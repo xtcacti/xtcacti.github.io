@@ -1,7 +1,7 @@
 ---
 title: CSS3
 date: 2021-02-19 22:22:54
-tags: CSS
+tags: frontend
 ---
 
 ## 样式

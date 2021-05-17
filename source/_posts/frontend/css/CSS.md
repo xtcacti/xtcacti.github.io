@@ -1,7 +1,7 @@
 ---
 title: CSS
 date: 2021-02-18 08:20:42
-tags: CSS
+tags: frontend
 ---
 
 ## CSS是什么？

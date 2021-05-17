@@ -1,7 +1,7 @@
 ---
 title: git
 date: 2021-02-06 22:38:14
-tags: Git
+tags: others
 ---
 
 - 回退到某一版本: `git reset --hard 版本号`

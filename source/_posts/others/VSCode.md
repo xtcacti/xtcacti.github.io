@@ -1,7 +1,7 @@
 ---
 title: VSCode
 date: 2021-02-05 15:59:03
-tags: VSCode
+tags: others
 ---
 
 ### 快捷键

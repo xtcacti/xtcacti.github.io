@@ -1,7 +1,7 @@
 ---
 title: resignation
 date: 2021-04-22 12:01:12
-tags: resignation
+tags: others
 ---
 
 ## to one people

@@ -1,7 +1,7 @@
 ---
 title: RESTAssured
 date: 2021-04-20 23:32:35
-tags: RestAssured
+tags: test
 ---
 
 ## What

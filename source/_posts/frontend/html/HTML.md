@@ -1,7 +1,7 @@
 ---
 title: HTML基础
 date: 2021-02-05 14:51:21
-tags: HTML
+tags: frontend
 ---
 
 ## HTML 是什么？

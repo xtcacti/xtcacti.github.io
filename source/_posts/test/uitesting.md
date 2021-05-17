@@ -1,7 +1,7 @@
 ---
 title: cucumber
 date: 2021-04-14 13:55:31
-tags: cucumber
+tags: test
 ---
 
 ## What is BDD?

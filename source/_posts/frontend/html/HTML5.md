@@ -1,7 +1,7 @@
 ---
 title: HTML5
 date: 2021-02-05 17:07:42
-tags: HTML
+tags: frontend
 ---
 
 ## HTML5 标签
